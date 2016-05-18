@@ -48,8 +48,26 @@ title: Le Wagon Middleman boilerplate
    <div class="wrapper-grey padded">
        <h2 class="text-center">Your next trip!</h2>
    <div class="container">
+   <div class="row">
+   <% data.planets.each do |person, space| %>
+   <div class="col-xs-12 col-sm-4">
+         <div class="card" style="background-image: linear-gradient(60deg, rgba(255,0,255,0.5), rgba(86,255,0,0.5)), url('<%= space.spacepicture %>');">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2 style="color: <%= space.favcolor %>"><%= space.name %></h2>
+            <p><%= space.description %></p>
+          </div>
+          <img class="card-user avatar" src="<%= space.picture %>" style="box-shadow: 5px 5px 15px 10px <%= space.seccolor %>;} ">
+          <%= link_to "", "planets/#{person}.html", class: "card-link"  %>
+        </div>
+   </div>
 
-    <div class="row">
+   <% end %>
+   </div>
+   </div>
+
+
+    <!-- <div class="row">
       <div class="col-xs-12 col-sm-4">
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://wallpaperscraft.com/image/space_universe_nebula_star_light_95356_1920x1080.jpg');">
           <div class="card-category">Popular</div>
@@ -85,7 +103,7 @@ title: Le Wagon Middleman boilerplate
       </div>
     </div>
   </div>
-  </div>
+  </div> -->
 
   <!-- Your newsletter code -->
   <div class="text-center padded">

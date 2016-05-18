@@ -1,0 +1,24 @@
+merel:
+  name: merel
+  favcolor: yellow;
+  seccolor: rgba(86, 255, 0, 1);
+  picture: images/merel.png
+  spacepicture: images/merelboot.png
+  description: Ik woon in een boot!
+  rating: 7
+aafke:
+  name: aafke
+  favcolor: rgba(0, 255, 243, 1);
+  seccolor: rgba(255,0,255,0.8);
+  picture: images/aafke.png
+  spacepicture: images/aafkecaravan.png
+  description: Ik hou van klimmen.
+  rating: 3
+bert:
+  name: bert
+  favcolor: rgba(255,0,255,0.8);
+  seccolor: yellow;
+  picture: images/bert.png
+  spacepicture: images/sesamstraat.png
+  description: Bleeahhjj
+  rating: 8

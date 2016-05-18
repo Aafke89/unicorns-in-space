@@ -1,0 +1,30 @@
+
+<% person = data.planets[name] %>
+<% rating =  person.rating%>
+<div class="text-center person-page">
+<div class="person-page-left">
+<%= image_tag person.picture, class: "avatar-larger"%>
+</div>
+<div class="person-page-between">
+    <% first_letter = person.name[0] %>
+    <% name_length = person.name.length %>
+    <% rest_letters =  person.name[1..name_length]%>
+    <h1><span class="first_letter" style="color: <%= person.favcolor %>"><%= first_letter.capitalize %></span><%= rest_letters %></h1>
+  <p><%= person.description %><br>
+  My favourite color is <i class="fa fa-square fa-4" style = "color: <%= person.favcolor %>"></i>
+  But I also like <i class="fa fa-square fa-6" style = "color: <%= person.seccolor %>"></i></p>
+  <div class="stars">
+  <% rating.times do %>
+      <a href="#"><i class="fa fa-star" style="color: <%= person.favcolor %>"></i></a>
+      <% end %>
+  <% (10 - rating).times do %>
+       <a href="#"><i class="fa fa-star" style="color: <%= person.seccolor %>"></i></a>
+       <% end %>
+  </div>
+</div>
+
+<div class="person-page-right">
+  <i class="fa fa-diamond fa-5" area-hidden="true"></i>
+</div>
+</div>
+
