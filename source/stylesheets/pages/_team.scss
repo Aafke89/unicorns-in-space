@@ -1,0 +1,25 @@
+#team {
+  color: red;
+  h1 {
+    color: $pink;
+  }
+  a {
+    color: $green;
+    &:hover {
+        color: $mintgreen;
+      }
+    }
+    .avatar-larger {
+      &:hover {
+        box-shadow: 20px 20px 20px 20px $mintgreen;
+      }
+    }
+    .hallo {
+      &:hover {
+        font-size: 100px;
+      }
+
+    }
+  }
+
+
