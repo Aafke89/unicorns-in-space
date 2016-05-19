@@ -2,10 +2,13 @@
 <div id="team">
 <h1 class="text-center"><span class="hallo">HALLO</span> WERELD</h1>
 <ul class="list-inline text-center">
+
   <% ["merel", "aafke", "bert"].each do |member| %>
     <li>
     <h3><%= member.capitalize %></h3>
-      <%= image_tag "#{member}.png", class: "avatar-larger" %>
+      <% link_to "/planets/#{member}.html" do %>
+        <%= image_tag "#{member}.png", class: "avatar-larger" %>
+      <% end %>
      </li>
   <% end %>
 </ul>
